@@ -34,9 +34,9 @@ const courses = [
 
 function main(){
 	courses.map((course) => {
-		console.log(course);
-		course.subjects.filter((subject) =>
+		course.subjects.map((subject) =>
 		{
+			console.log(course);
 			if(subject.id == 1001 || subject.id == 1003){
 				console.log(subject.name + " " + subject.units);
 			}
